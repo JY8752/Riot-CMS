@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "parcel": "parcel build src/main/js/main.js -d src/main/resources/static/js/output"
+  },
   "dependencies": {
     "@riotjs/route": "^5.3.3",
     "axios": "^0.20.0",
     "riot": "4.11.0",
-    "semantic-ui-riot": "^1.2.0"
+    "semantic-ui-riot": "^2.2.4"
   },
   "devDependencies": {
     "@riotjs/hot-reload": "^4.0.1",

@@ -1,0 +1,19 @@
+<app>
+    <login if={ !state.isLoggedIn } />
+
+    <script>
+        import Login from './pages/login.riot'
+
+        export default {
+            components: {
+                Login
+            },
+            state: {
+                isLoggedIn: false
+            },
+            onBeforeMount(props, state) {
+                
+            }
+        }
+    </script>
+</app>
