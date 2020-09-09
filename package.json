@@ -1,0 +1,17 @@
+{
+  "name": "riot2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@riotjs/route": "^5.3.3",
+    "axios": "^0.20.0",
+    "riot": "4.11.0",
+    "semantic-ui-riot": "^1.2.0"
+  },
+  "devDependencies": {
+    "@riotjs/hot-reload": "^4.0.1",
+    "@riotjs/parcel-plugin-riot": "^4.0.1",
+    "parcel-bundler": "^1.12.4"
+  }
+}
