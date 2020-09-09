@@ -18,6 +18,10 @@ repositories {
 	mavenCentral()
 }
 
+task parcel(type: Exec) {
+    commandLine 'parcel', 'build', 'src/main/js/main.js',  '-d', 'src/main/resources/static/js/output'
+}
+
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
