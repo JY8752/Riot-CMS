@@ -37,16 +37,20 @@
                     </div>
                 </div>
             </div>
-            <div class="item">
-                <i class="sign-out icon"></i>
-                Logout
+            <div class="item logout">
+                <a onclick={ handleLogout }>
+                    <i class="sign-out icon"></i>
+                    Logout
+                </a>
             </div>
         </div>
     </navigation>
 
     <script>
         export default {
-
+            handleLogout() {
+                this.service.logout()
+            }
         }
     </script>
 
@@ -67,6 +71,9 @@
         .ui.list > .item {
             margin: 1.5rem auto;
             font-size: 1rem;
+        }
+        .item.logout {
+            cursor: pointer;
         }
     </style>
 </sidebar>

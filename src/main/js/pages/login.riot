@@ -65,11 +65,19 @@
             },
             handleSubmit(e) {
                 e.preventDefault()
-                if(e.target.username.value.length === 0)
-                    this.errors.username = errorMessages.username
-                if(e.target.password.value.length === 0)
-                    this.errors.password = errorMessages.password
-                this.update()
+
+                const inputUsername = e.target.username.value
+                const inputPassword = e.target.password.value
+
+                if(inputUsername.length > 0 && inputPassword.length > 0) {
+                    this.service.login()
+                } else {
+                    if(e.target.username.value.length === 0)
+                        this.errors.username = errorMessages.username
+                    if(e.target.password.value.length === 0)
+                        this.errors.password = errorMessages.password
+                    this.update()
+                }
             }
         }
     </script>
