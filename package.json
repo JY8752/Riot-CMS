@@ -7,6 +7,7 @@
     "parcel": "parcel build src/main/js/main.js -d src/main/resources/static/js/output"
   },
   "dependencies": {
+    "@datorama/akita": "^5.2.4",
     "@riotjs/route": "^5.3.3",
     "axios": "^0.20.0",
     "riot": "4.11.0",

@@ -1,0 +1,49 @@
+<app-header>
+    <div class="ui secondary pointing menu">
+        <h2 class="item">
+            MY CMS
+        </h2>
+        <div class="right menu">
+            <su-dropdown items={ dropdownItems } onchange={ handleChange }></su-dropdown>
+        </div>
+    </div>
+
+    <script>
+        import { router } from '@riotjs/route'
+        export default {
+            dropdownItems: [
+                {
+                    label: 'Welcome',
+                    value: null,
+                    header: true,
+                    default: true
+                },
+                {
+                    label: 'Profile',
+                    icon: 'user',
+                    value: 1
+                },
+                {
+                    label: 'Logout',
+                    icon: 'sign-out',
+                    value: 2
+                }
+            ],
+            handleChange(e) {
+                if(e.value === '/profile')
+                    router.push(e.value)
+                else
+                    this.service.logout()
+            }
+        }
+    </script>
+
+    <style>
+        .ui.bock.header {
+            background: #1794a5;
+            color: #fff;
+            border: none;
+            border-radius: unset;
+        }
+    </style>
+</app-header>
