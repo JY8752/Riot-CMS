@@ -68,12 +68,24 @@
         i.user.icon {
             font-size: 3rem;
         }
-        .ui.list > .item {
-            margin: 1.5rem auto;
-            font-size: 1rem;
+        .ui.menu .item.sidebar-head {
+            text-align: center;
+            font-weight: 900;
+            padding: 2rem 1rem;
+            border-bottom: 1px solid #666;
         }
-        .item.logout {
+        .ui.menu .ui.list > item a {
+            padding: 2rem .5rem;
+            font-size: 1rem;
+            display: block;
+        }
+        .ui.inverted.menu .item > a:hover {
+            color: #00b5ad;
+        }
+        .ui.inverted.menu .item.logout {
             cursor: pointer;
+            padding: 2rem;
+            border-top: 1px solid #666;
         }
     </style>
 </sidebar>
